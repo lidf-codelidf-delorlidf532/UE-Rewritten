@@ -1,4 +1,4 @@
-const hadrons_unl_req = new Decimal(70)
+const hadrons_unl_req = new Decimal(7)
 
 function playerHadronsData(fullReset=true) { return {
     unl: (!fullReset && hasAnhUpg(15)),
@@ -19,7 +19,7 @@ function hadronLoop(diff) {
 }
 
 function getHadronNerfExp() {
-    let exp = .5;
+    let exp = 1.5;
     if (voidUpgActive(14)) exp = (hasAnhUpg(31)&&getVoidUpgTier(14)>1)?Math.pow(exp, 1/3):Math.sqrt(exp);
     if (player.photons.unl) exp = Math.pow(exp, 1/tmp.ph.col[2].eff.eff.toNumber());
     return exp;
