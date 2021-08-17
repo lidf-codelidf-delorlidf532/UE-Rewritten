@@ -32,7 +32,7 @@ function getHadronDispGain() {
 
 function getHadronGainMult() {
     let mult = tmp.had.boostEff2.times(tmp.upgs[32].eff);
-    if (hasAnhUpg(14)) mult = mult.times(10);
+    if (hasAnhUpg(14)) mult = mult.times(100000000);
     return mult;
 }
 
