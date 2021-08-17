@@ -1,4 +1,4 @@
-const universe_upgs_unl_req = new Decimal(7)
+const universe_upgs_unl_req = new Decimal(1)
 const universe_upgs = {
     rows: 4,
     cols: 3,
